@@ -1,0 +1,164 @@
+/* COMMON COLOURS */
+    .my-blue {
+        color: rgb(1, 1, 20);
+    }
+
+    .my-blue-bg {
+        background-color: rgb(1, 1, 20);
+    }
+
+    .my-salmon {
+        color: rgb(252, 165, 156);
+    }
+
+    .my-salmon-bg {
+        background-color: rgba(252, 166, 156, 0.7);
+    }
+
+/* NAVIGATION BAR */
+    .my-navbar {
+        background-color: rgb(1, 1, 20);
+        display: in-line;
+    }
+
+    .navbar-active{
+        background-color: rgb(1, 1, 20);
+    }
+
+    .my-navbar a{
+        color:white;
+        font-family: "Andale Mono", AndaleMono, monospace;
+    }
+
+    .my-navbar li a{
+        color:rgba(255, 255, 255, 0.767);
+        font-family: "Andale Mono", AndaleMono, monospace;
+    }
+
+    .my-navbar a:hover {
+        color: rgb(252, 165, 156);
+        
+    }
+
+/* COVER PAGE */
+
+    .cover {
+        /*css for full size background image*/
+        background: url('./assets/Cover\ Photo.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        color: rgb(1, 1, 20);
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        padding: 0 20px;
+    }
+    .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: rgb(1, 1, 20);
+        color: rgba(255, 255, 255, 0.767);
+    }
+
+    .cover .btn-lg:hover {
+        color: rgb(252, 165, 156);
+    }
+
+    .btn-info {
+        border-color: rgb(252, 165, 156);
+    }
+
+    .btn-info:hover {
+        border-color: rgb(252, 165, 156);
+    }
+
+
+/* RESUME */
+    h1 {
+        font-family: "Andale Mono", AndaleMono, monospace;
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 15px;
+        color: rgb(1, 1, 20);
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    hr {
+        border-top: 2px solid rgba(0, 0, 0, .1);
+    }
+
+    .programming-icons {
+        align-items: center;
+        font-size: 50px;
+    }
+
+    .email-wrap {
+        word-wrap: break-word;
+    }
+
+    .content-item {
+        padding-left: 1em;
+        padding-top: 5em;
+    }
+
+    .shift {
+        height:100%;
+        margin-top: 3em;
+    }
+
+    .content-sub-item {
+        border-left: 4px solid rgb(252, 165, 156);
+        padding-left: 5px;
+        margin-top: 8px;
+        min-height: 80px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        border: 2px solid white;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        font-size: 12px;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .list-inline-item:hover .tooltiptext{
+        visibility: visible;
+    }
+
+    .fill {
+        height: 100%;
+    }
+
+    .icons {
+        height: 74.4px;
+    }
+
+    .blockquote-footer {
+        color: black;
+    }
+
+/* PROJECTS */
+    .btn-outline-secondary:hover {
+        background-color: rgb(1, 1, 20);
+        border-color: rgb(1, 1, 20);
+    }

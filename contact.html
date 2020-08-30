@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kaitlyn Dean Contact</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147287768-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147287768-1');
+    </script>
+    
+    <!-- css links and bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+        <style type="text/css">
+            body {
+                font-family: "Andale Mono", AndaleMono, monospace;
+                font-size: 18px;
+                background-image: url('./assets/Contact\ Background.jpg');
+            }
+        
+            /* ----------- My Form ----------- */
+            .myform {
+                margin: 0 auto;
+                width: 400px;
+                padding: 14px;
+        
+            }
+        
+            #stylized h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: white;
+                float:left;
+                padding-left: 10px;
+            }
+        
+            #stylized input {
+                float: left;
+                font-size: 18px;
+                padding: 4px 2px;
+                background-color: transparent;
+                width: 75%;
+                margin: 2px 0 20px 10px;
+                border: transparent;
+                border-bottom: solid 1px white;
+            }
+        
+            #stylized textarea {
+                float: left;
+                font-size: 18px;
+                padding: 4px 2px;
+                border: transparent;
+                width: 75%;
+                margin: 2px 0 20px 10px;
+                border-color: rgb(1, 1, 20);
+                background-color: transparent;
+                border-bottom: solid 1px white;
+            }
+        
+            #stylized button {
+                clear: both;
+                margin-left: 160px;
+                width: 125px;
+                height: 31px;
+                background: white;
+                text-align: center;
+                line-height: 31px;
+                color: rgb(1, 1, 20);
+                font-size: 11px;
+                font-weight: bold;
+                margin-top: 15px;
+                border-color: rgb(1, 1, 20);
+            }
+        
+            #stylized button:hover {
+                background-color: rgb(1, 1, 20);
+                color: white;
+            }
+        
+            ::placeholder {
+                color: white;
+            }
+        </style>
+</head>
+
+<body style="height:100vh">
+    <!-- navigation bar -->
+    <nav class="my-navbar navbar fixed-top navbar-expand-lg p-0">
+
+        <!--Brand-->
+        <a href="index.html" class="navbar-brand pl-2">Kaitlyn Dean</a>
+
+            <!--Start buttons on the right-->
+            <ul class="navbar-nav ml-auto flex-row">
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="resume.html">Résumé</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div id="stylized" class="myform" style="padding-top: 10em;">
+        <form id="form1" id="form1" action="mail.php" method="POST">
+            <h1 style="text-align: center;">Contact Me!</h1>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" rows="6" cols="25" placeholder="Message"></textarea><br />
+            <button type="submit" value="Send" class="btn" style="padding:0">Send Message</button>
+            <div class="spacer"></div>
+        </form>
+    </div>
+</body>
+
+</html>
