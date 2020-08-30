@@ -148,25 +148,47 @@
 
 <body style="height:100vh">
     <!-- navigation bar -->
-    <nav class="my-navbar navbar fixed-top navbar-expand-lg p-0">
+    <nav class="my-navbar navbar-dark navbar fixed-top navbar-expand-lg p-0">
 
         <!--Brand-->
         <a href="index.html" class="navbar-brand pl-2">Kaitlyn Dean</a>
 
-        <!--Start buttons on the right-->
-        <ul class="navbar-nav ml-auto flex-row">
-            <li class="nav-item navbar-active" style="padding:8px">
-                <a class="nav-link" href="resume.html">Résumé</a>
-            </li>
-            <li class="nav-item navbar-active" style="padding:8px">
-                <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item navbar-active" style="padding:8px">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="main_nav">
+          <div class="offcanvas-header mt-3">  
+            <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+            <h4 class="py-2 text-white"></h4>
+            <h4 class="py-2 text-white"></h4>
+          </div>
+            <!--Start buttons on the right-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="resume.html">Résumé</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
+<script>
+    $("[data-trigger]").on("click", function(){
+        var trigger_id =  $(this).attr('data-trigger');
+        $(trigger_id).toggleClass("show");
+        $('body').toggleClass("offcanvas-active");
+    });
+    
+    // close button 
+    $(".btn-close").click(function(e){
+        $(".navbar-collapse").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+    }); 
+</script>
 
     <!-- content -->
 
