@@ -4,18 +4,18 @@
 <head>
     <title>Kaitlyn Dean Portfolio</title>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147287768-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-147287768-1');
+        gtag('config', 'UA-147287768-1');
     </script>
-    
+
     <!-- css links and bootstrap -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -27,6 +27,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -41,14 +43,14 @@
         <a href="index.html" class="navbar-brand pl-2">Kaitlyn Dean</a>
 
         <button class="navbar-toggler" type="button" data-trigger="#main_nav">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse" id="main_nav">
-          <div class="offcanvas-header mt-3">  
-            <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
-            <h4 class="py-2 text-white"></h4>
-            <h4 class="py-2 text-white"></h4>
-          </div>
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                <h4 class="py-2 text-white"></h4>
+                <h4 class="py-2 text-white"></h4>
+            </div>
             <!--Start buttons on the right-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item navbar-active" style="padding:8px">
@@ -63,29 +65,41 @@
             </ul>
         </div>
     </nav>
-<script>
-    $("[data-trigger]").on("click", function(){
-        var trigger_id =  $(this).attr('data-trigger');
-        $(trigger_id).toggleClass("show");
-        $('body').toggleClass("offcanvas-active");
-    });
-    
-    // close button 
-    $(".btn-close").click(function(e){
-        $(".navbar-collapse").removeClass("show");
-        $("body").removeClass("offcanvas-active");
-    }); 
-</script>
+    <script>
+        $("[data-trigger]").on("click", function () {
+            var trigger_id = $(this).attr('data-trigger');
+            $(trigger_id).toggleClass("show");
+            $('body').toggleClass("offcanvas-active");
+        });
+
+        // close button 
+        $(".btn-close").click(function (e) {
+            $(".navbar-collapse").removeClass("show");
+            $("body").removeClass("offcanvas-active");
+        }); 
+    </script>
 
     <!-- content -->
     <div class="inner cover" style="padding-top: 100px;">
         <h1 class="cover-heading">Kaitlyn Dean - Computer Engineering Student</h1>
 
         <p class="lead">
-            This portfolio contains my resume, a few projects, and a contact form.
+            This portfolio contains my resume, a few projects, and a contact form.<br><br>Check out my Github and
+            Linkedin!
         </p>
 
-        <p class="lead"><a class="btn btn-lg btn-info" href="projects.html">Projects</a></p>
-      </div>
+        <ul class="list-inline programming-icons text-center">
+            <a style="text-decoration: none; color:black" href="https://github.com/KMDean">
+                <li class="list-inline-item"><i class="devicon-github-plain"></i><span class="tooltiptext">Github</span>
+                </li>
+            </a>
+            <a style="text-decoration: none; color:black" href="https://ca.linkedin.com/in/kaitlyndean1999">
+                <li class="list-inline-item"><i class="devicon-linkedin-plain"></i><span
+                        class="tooltiptext">Linkedin</span></li>
+            </a>
+        </ul>
+
+    </div>
 </body>
+
 </html>
