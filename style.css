@@ -1,0 +1,257 @@
+/* COMMON COLOURS */
+.my-blue {
+    color: #2079c7;
+}
+
+.my-blue-bg {
+    background-color: #2079c7;
+}
+
+.my-grey {
+    background-color: rgb(219, 218, 218);
+}
+
+.gr-dk {
+    background-color: #a4c6aa;
+}
+
+.gr-md {
+    background-color: #c1dfc6;
+}
+
+.gr-lt {
+    background-color: #d6f3db;
+}
+
+
+
+/* NAVIGATION BAR */
+.my-navbar {
+    /*background-color: rgb(1, 1, 20);*/
+    background-color: #c1dfc6;
+    display: in-line;
+}
+
+.dropdown-item {
+    background-color: rgb(1, 1, 20);
+}
+
+.dropdown-menu {
+    background-color: rgb(1, 1, 20);
+}
+
+.dropdown-item a:hover {
+    background-color: rgb(1, 1, 20);
+}
+
+.navbar-active {
+    /*background-color: rgb(1, 1, 20);*/
+    background-color: #c1dfc6;
+}
+
+.my-navbar a {
+    color: white;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.my-navbar li a {
+    color: rgba(255, 255, 255, 0.767);
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 40px; /* ABOUT WORK FONT SIZE */
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+.my-navbar a:hover {
+    color: rgb(252, 165, 156);
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .offcanvas-header {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        /*background-color: rgb(252, 165, 156);*/
+        background-color: #c1dfc6;
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+        padding-left: 1rem !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: #c1dfc6;
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+
+    .btn-outline-danger:hover {
+        color: #fff;
+        background-color: #a4c6aa;
+        border-color: #a4c6aa;
+    }
+
+    .btn-outline-danger {
+        color: rgba(0,0,0,.7);
+        border-color: rgba(0,0,0,.7);
+    }
+}
+
+
+
+
+
+/* RESUME */
+h1 {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgb(1, 1, 20);
+}
+
+h2 {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgb(1, 1, 20);
+}
+
+p {
+    font-size: 18px;
+}
+
+hr {
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+
+.programming-icons {
+    align-items: center;
+    font-size: 50px;
+}
+
+.email-wrap {
+    word-wrap: break-word;
+}
+
+.content-item {
+    padding-left: 1em;
+    padding-top: 5em;
+}
+
+.shift {
+    height: 100%;
+    margin-top: 3em;
+}
+
+.content-sub-item {
+    border-left: 4px solid #c1dfc6; /* BESIDE JOB COLOUR */
+    padding-left: 5px;
+    margin-top: 8px;
+    min-height: 80px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    border: 2px solid white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.list-inline-item:hover .tooltiptext {
+    visibility: visible;
+}
+
+.fill {
+    height: 100%;
+}
+
+.icons {
+    height: 74.4px;
+}
+
+.blockquote-footer {
+    color: black;
+}
+
+
+
+
+
+/* WORK */
+.btn-outline-secondary1:hover {
+    color: #212529;
+    background-color: #c1dfc6;
+    border-color: none;
+}
+
+.btn-outline-secondary1 {
+    color: #212529;
+    background-color: #a4c6aa;
+    border-color: none;
+}
+
+
+
+/* OLD CODE */
+/*.my-navbar {
+    background-color: rgb(49, 49, 49);
+    display: in-line;
+}
+
+.navbar-active{
+    background-color: rgb(82, 82, 82);
+}
+
+.my-navbar a{
+    color:white;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.my-navbar li a{
+    color:rgba(255, 255, 255, 0.767);
+    font-family: "Andale Mono", AndaleMono, monospace;
+}*/
+
+
+
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kate Dean Work</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147287768-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147287768-1');</script>
+
+    <!-- css links and bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="projectStyles.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+</head>
+
+
+
+
+<body style="height:100vh">
+
+    <!-- navigation bar -->
+    <nav class="my-navbar navbar-light navbar fixed-top navbar-expand-lg p-0">
+
+        <!--Brand-->
+        <a href="index.html" class="navbar-brand" style="padding-left: 4rem">Kate Dean</a>
+
+        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="main_nav">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                <h4 class="py-2 text-white"></h4>
+                <h4 class="py-2 text-white"></h4>
+            </div>
+            <!--Start buttons on the right-->
+            <ul class="navbar-nav ml-auto" style="padding-right: 4rem">
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="resume.html">About</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="index.html">Work</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $("[data-trigger]").on("click", function () {
+            var trigger_id = $(this).attr('data-trigger');
+            $(trigger_id).toggleClass("show");
+            $('body').toggleClass("offcanvas-active");
+        });
+
+        // close button
+        $(".btn-close").click(function (e) {
+            $(".navbar-collapse").removeClass("show");
+            $("body").removeClass("offcanvas-active");
+        });
+    </script>
+
+    <!-- Header -->
+    <header class="gr-md py-5">
+        <!-- TOP BACKGROUND COLOUR -->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12" style="text-align:center; padding-top: 50px">
+                    <div style="display:inline-block"><h1 style="border: 7px; border-style: solid; border-color: my-blue; text-align: center; padding: 1em; font-size: 50px">WORK</h1></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Page Content -->
+    <main role="main" style="padding-top: 3em;">
+
+        <div class="album py-5">
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="qnx.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">QNX Embedded Door System</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="compiler.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">PLATYPUS Compiler in C</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="subnetcalc.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Subnet Calculator GUI in Java</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="cobol.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Cobol SCREEN Payment Manager</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="resmgr.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Metronome Resource Manager</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="angular.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">LMS Grade Analytics in Angular</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="gradecalculator.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Grade Calculator in Assembly</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="datastruct.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Data Structures Library</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <a class="btn btn-outline-secondary1 card-header gr-dk" style="text-align:left" href="logdissector.html">
+                                <!-- COLOUR -->
+                                View
+                            </a>
+                            <ul class="list-group list-group-flush">
+                                <li class="gr-lt list-group-item"><p style="text-align:center; padding:15px" class="card-text">Wireshark Log Dissector in TShark</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--
+                    ============================================================================================================================================
+                    This is where more squares will go.
+                    ============================================================================================================================================
+                    -->
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+</body>
+
+</html>

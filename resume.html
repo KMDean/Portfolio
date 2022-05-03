@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kate Dean Resume</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147287768-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147287768-1');</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- Devicon Stylesheet -->
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+
+<body style="height:100vh">
+
+    <!-- navigation bar -->
+    <nav class="my-navbar navbar-light navbar fixed-top navbar-expand-lg p-0">
+
+        <!--Brand-->
+        <a href="index.html" class="navbar-brand" style="padding-left: 4rem">Kate Dean</a>
+
+        <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="main_nav">
+            <div class="offcanvas-header mt-3">
+                <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+                <h4 class="py-2 text-white"></h4>
+                <h4 class="py-2 text-white"></h4>
+            </div>
+            <!--Start buttons on the right-->
+            <ul class="navbar-nav ml-auto" style="padding-right: 4rem">
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="resume.html">About</a>
+                </li>
+                <li class="nav-item navbar-active" style="padding:8px">
+                    <a class="nav-link" href="index.html">Work</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $("[data-trigger]").on("click", function () {
+            var trigger_id = $(this).attr('data-trigger');
+            $(trigger_id).toggleClass("show");
+            $('body').toggleClass("offcanvas-active");
+        });
+
+        // close button
+        $(".btn-close").click(function (e) {
+            $(".navbar-collapse").removeClass("show");
+            $("body").removeClass("offcanvas-active");
+        });
+    </script>
+
+    <!-- Header -->
+    <header class="gr-md py-5">
+        <!-- TOP BACKGROUND COLOUR -->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12" style="text-align:center; padding-top: 50px">
+                    <div style="display:inline-block"><h1 style="border: 7px; border-style: solid; border-color: my-blue; text-align: center; padding: 1em; font-size: 50px">ABOUT</h1></div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!--Content Start-->
+    <div class="container-fluid fill">
+        <div class="row fill">
+            <!--Left Side - Grey -->
+            <div class="col-md-12 col-lg-3 pt-1 pl-2 pr-2 text-center">
+                <!-- LEFT SIDE BACKGROUND COLOUR DECL -->
+                <!--Personal Information-->
+                <div class="row">
+                    <div class="col-12" style="padding-top: 3em;">
+                        <h1>EDUCATION</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <b>Université Grenoble Alpes</b>
+                    </div>
+                    <div class="col-12">
+                        Honours Bachelor Degree of Engineering in Computer Networks and Telecommunications with Specialization in Computer Networks, Mobility, and Security
+                        <blockquote class="blockquote-footer">
+                            2021 - 2022
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <b>Algonquin College</b>
+                    </div>
+                    <div class="col-12">
+                        Advanced Diploma in Computer Engineering Technology - Computing Science
+                        <blockquote class="blockquote-footer">
+                            2018 - 2021
+                        </blockquote>
+                    </div>
+                </div>
+                <ul><br></ul>
+
+                <!--Literary Work-->
+                <div class="row">
+                    <div class="col-12 ">
+                        <h1>TECHNICAL WRITING</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 details">
+                        <ul><a href="KDeanSynthesis.pdf" target="_blank">Synthesis : Security Framework Implementation Proposal for Teleoperated Surgical Robotics and Medical Devices (PDF)</a></ul>
+                        <ul><br></ul>
+                    </div>
+                </div>
+
+                <!--Skills-->
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <h1>CURRENT FOCUS</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <ul class="list-inline programming-icons text-center">
+                    <li class="list-inline-item"><i class="devicon-c-plain"></i><span class="tooltiptext">C</span></li>
+                    <li class="list-inline-item">
+                        <i class="devicon-cplusplus-plain"></i><span class="tooltiptext">C++</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img style="height:50px; width:50px; vertical-align:text-top"
+                             src="./assets/wireshark icon.png"></img><span class="tooltiptext">Wireshark | TShark</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img style="height:50px; width:50px; vertical-align:text-top"
+                             src="./assets/arduino-icon.png"></img><span class="tooltiptext">Arduino</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-linux-plain colored"></i><span class="tooltiptext">Linux</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img style="width:100px; vertical-align:middle"
+                             src="./assets/qnx-icon.png"></img><span class="tooltiptext">QNX</span>
+                    </li>
+                </ul>
+                <ul><br></ul>
+
+
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <h1>COMPUTER SKILLS</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                <ul class="list-inline programming-icons text-center">
+                    <li class="list-inline-item">
+                        <i class="devicon-java-plain "></i><span class="tooltiptext">Java</span>
+                    </li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i><span class="tooltiptext">CSS</span></li>
+                    <li class="list-inline-item">
+                        <i class="devicon-html5-plain"></i><span class="tooltiptext">HTML5</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-postgresql-plain"></i><span class="tooltiptext">PostgreSQL | SQL | DDL | DML</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img style="height:50px; width:50px; vertical-align:text-top"
+                             src="./assets/eclipse icon.png"></img><span class="tooltiptext">Eclipse IDE</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-csharp-plain"></i><span class="tooltiptext">
+                            C
+                            Sharp
+                        </span>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-angularjs-plain"></i><span class="tooltiptext">Angular</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <img style="height:50px; width:50px; vertical-align:text-top"
+                             src="./assets/cobol-icon.png"></img><span class="tooltiptext">Cobol</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-dot-net-plain"></i><span class="tooltiptext">.NET</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Right Side - White -->
+            <div class="col-md-12 col-lg-9 pl-3 content" style="background-color: rgba(255, 255, 255, 0.767);">
+                <div class="row" style="padding-top: 52px">
+
+                    <!--Experience-->
+                    <div class="col-12">
+                        <h1>WORK EXPERIENCE</h1>
+                        <hr>
+                    </div>
+                    <div class="col-12">
+
+
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0"><b>IQX Global - DevOps (Co-op)</b></p>
+                                <p class="blockquote-footer m-0">March 2022 - Present</p>
+                                <p>
+                                    Collaborating with the Development & QA teams
+                                    <br>Automating deployments and builds
+                                    <br>Resolving problems with builds
+                                    <br>Support and administer third-party applications
+                                    <br>Preparing installation guides and packages for clients
+                                    <br>Administering System/Software Upgrades and Releases
+                                    <br>Relevant technologies: Jenkins, Docker, Java, Relational databases (SQL), AWS
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0"><b>North Frontenac Telephone Company - Technical Support</b></p>
+                                <p class="blockquote-footer m-0">April 2021 - June 2021</p>
+                                <p>
+                                    Configured TV Boxes, Routers, and Wifi Extenders
+                                    <br>Checked bandwidth profiles and connectivity statuses
+                                    <br>Real-time troubleshooting of customer connectivity issues
+                                    <br>Disconnected and connected customer services
+                                    <br>Managed outgoing hardware
+                                    <br>Created and managed inventory for all hardware in the London, Ontario, Canada office
+                                    <br>Ordered locates for fibre optic network cables<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0"><b>Versaterm - Software Developer (Co-op) Extended to Full-Time</b></p>
+                                <p class="blockquote-footer m-0">January 2020 - August 2020</p>
+                                <p>
+                                    Learned and coded in Genero BDL, XML, WSDL, C#, .NET, and React JS<br>Developed
+                                    front-end and back-end GUI pages to communicate between software and databases
+                                    <br>Created REST and SOAP Web Services
+                                    <br>Learned and used source control with GIT and SVN<br>
+                                    <div style="margin-left:4em">
+                                        Example task: Adding audit logs to log changes in settings.
+                                        Created a page to query and filter through all audit logs,
+                                        checking user security for browse permissions. Using REST webservices to GET logs.
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0"><b>CCX Technologies - Software Tester</b></p>
+                                <p class="blockquote-footer m-0">September 2019 - December 2019</p>
+                                <p>
+                                    Worked in Linux (Arch)<br>Connected appliances to servers<br>Routed into remote
+                                    systems using ssh in the terminal<br>Updated and utilized databases in
+                                    dbeaver<br>Set up API connections
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0"><b>University of Western Ontario - eLearning Developer</b></p>
+                                <p class="blockquote-footer m-0">July 2019 - September 2019 (Temporary Position)</p>
+                                <p>
+                                    Converted eLearning modules from Flash supported to HTML5 supported<br>Optimized
+                                    eLearning for WCAG level AA accessibility standards<br>Created and designed new
+                                    eLearning modules
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0">
+                                    <b>Alidade Group with The Ottawa Hospital - EPS Go-Live Implementation</b>
+                                </p>
+                                <p class="blockquote-footer m-0">May 2019 - July 2019 (Temporary Position)</p>
+                                <p>
+                                    Learned a new electronic patient system<br>Assisted nurses with troubleshooting and
+                                    usability<br>Guided nurses through system utilization
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 3em;">
+                            <div class="col-12 content-sub-item">
+                                <p class="m-0">
+                                    <b>
+                                        St. Joseph's Hospital - Organizational Development and Learning
+                                        Services<br>(Co-op 220 Hours and 100+ Volunteer Hours)
+                                    </b>
+                                </p>
+                                <p class="blockquote-footer m-0">July 2013 - June 2018</p>
+                                <p>
+                                    Tested eLearning SCORM content<br>Assisted with tracking classroom completion
+                                    results<br>Assisted with corporate orientation administration<br>
+                                    Collated/summarized course evaluation
+                                    results<br>Checked system interface files for issue identification
+                                    purposes<br>Participated in user acceptance testing as part of learning management system upgrades
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
