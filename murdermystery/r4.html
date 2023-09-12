@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: transparent; /* Make it white if you need */
+  color: black;
+  padding: 0 24px;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe Script', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrong {
+  color: red;
+}
+
+.right {
+  color: green;
+}
+
+#message {
+  display: none;
+}
+
+#key {
+  display: none;
+}
+
+#decrypt {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="header"></h1>
+    <label for="code1">Secret Code: </label>
+    <input type="text" id="code1" name="code1"> 
+    <button onclick="showMessage()">Submit</button>
+    <br>
+    <label for="code2">Secret Word: </label>
+    <input type="text" id="code2" name="code2">
+    <button onclick="showKey()">Submit</button>
+
+    <p id="showMsg"></p>
+    <img id="message" src="./message.PNG" />
+    <br>
+    <img id="key" src="./key.PNG" />
+    <p id="showKey"></p>
+    <br>
+
+    <div id="decrypt">
+      <label for="code2">Decrypted Word: </label>
+      <input type="text" id="code3" name="code3">
+      <button onclick="showAnswer()">Submit</button>
+  	  <p id="showAnswer"></p>
+    </div>
+
+
+<script>
+var secretCode = "treasure";
+var secretWord = "love";
+var secretAnswer = "heartbreak";
+
+function showMessage() {
+  var code1 = document.getElementById("code1").value.toLowerCase();
+  if (code1 == secretCode) {
+  	document.getElementById("showMsg").innerHTML = "";
+  	document.getElementById('message').style.display = "block";
+  	document.getElementById('decrypt').style.display = "block";
+  } else {
+  	document.getElementById("showMsg").innerHTML = "Secret Code is Incorrect";
+  	document.getElementById("showMsg").className = "wrong";
+  }
+}
+
+function showKey() {
+  var code2 = document.getElementById("code2").value.toLowerCase();
+  if (code2 == secretWord) {
+  	document.getElementById("showKey").innerHTML = "";
+  	document.getElementById('key').style.display = "block";
+  	document.getElementById('decrypt').style.display = "block";
+  } else {
+  	document.getElementById("showKey").innerHTML = "Secret Word is Incorrect";
+  	document.getElementById("showKey").className = "wrong";
+  }
+}
+
+function showAnswer() {
+  var code3 = document.getElementById("code3").value.toLowerCase();
+  if (code3 == secretAnswer) {
+  	document.getElementById("showAnswer").innerHTML = "Solved!";
+  	document.getElementById("showAnswer").className = "right";
+  } else {
+  	document.getElementById("showAnswer").innerHTML = "Decrypted Word is Incorrect";
+  	document.getElementById("showAnswer").className = "wrong";
+  }
+}
+</script>
+
+
+
+</body>
+</html>
