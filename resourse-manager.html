@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Kate Dean-Jenkins QNX Embedded Secure State Controller</title>
+	<title>Kate Dean-Jenkins QNX Embedded Real-Time Resource Manager</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,7 @@
 			<div class="logo container">
 				<div>
 					<h1><a href="index.html" id="logo">Kate Dean-Jenkins</a></h1>
-					<p>QNX Embedded Secure State Controller</p>
+					<p>QNX Embedded Real-Time Resource Manager</p>
 				</div>
 			</div>
 		</header>
@@ -58,39 +58,38 @@
 							<article class="box page-content">
 
 								<header>
-									<h2>QNX Embedded Systems Server / Client</h2>
+									<h2>QNX Metronome Resource Manager</h2>
 								</header>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Real-Time Embedded Systems Engineering:</h3>
+									<h3>RTOS Resource Management:</h3>
 									<p>
-										Architected a distributed access control system within the Blackberry QNX
-										environment using C, leveraging the QNX Namespace to establish secure
-										client-server communication. I engineered a three-tiered architecture consisting
-										of an input client, a display server, and a central controller to manage
-										asynchronous hardware-status messaging.
+										Engineered a custom QNX Resource Manager in C to facilitate real-time timing and
+										synchronization. I extended the QNX file system namespace to create a
+										specialized device interface, allowing the system to process high-priority
+										metronome pulses and timing signatures with microsecond precision.
 									</p>
 								</section>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Finite State Machine (FSM) Logic:</h3>
+									<h3>Concurrent Architecture & Synchronization:</h3>
 									<p>
-										Implemented a robust Deterministic Finite Automaton (DFA) to govern the
-										operational lifecycle of a secure entry system (Lock/Unlock/Open/Close). By
-										applying compiler theory and state-transition logic, I ensured the system
-										maintained high-integrity operational order, programmatically preventing invalid
-										sequences such as unauthorized opening of locked nodes.
+										Implemented a Thread Pool architecture to handle asynchronous command-line
+										inputs and terminal interrupts. By utilizing QNX Pulses for non-blocking
+										inter-process communication, I ensured that system commands—including start,
+										stop, pause, and set—remained responsive without drifting from the real-time
+										clock.
 									</p>
 								</section>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Distributed Inter-Process Communication (IPC):</h3>
+									<h3>Multi-Threaded Logic & Control:</h3>
 									<p>
-										Designed a complex Client-Server-Client workflow to facilitate real-time
-										synchronization between user input and hardware-prompt displays. This
-										architecture utilized specialized QNX system calls for server creation and
-										naming, ensuring reliable and secure data flow across the embedded network
-										infrastructure.
+										Developed a robust command-processing engine capable of interpreting complex
+										temporal parameters and beats-per-measure configurations. I optimized the
+										execution flow to maintain strict deterministic behavior, ensuring the embedded
+										system provided stable, real-time feedback across a variety of user-defined time
+										signatures.
 									</p>
 								</section>
 
@@ -109,10 +108,23 @@
 
 										<!-- Feature -->
 										<section class="box feature">
-											<a class="image featured"><img src="images/qnx.PNG" alt="" /></a>
-											<h3><a>Command-line Input Run</a></h3>
+											<a class="image featured"><img src="images/set_command.PNG" alt="" /></a>
+											<h3><a>Set Command</a></h3>
 											<p>
-												This photo shows an example of how the input/output would look.
+												This photo shows the view of the set terminal command changing the time signatues and bpm.
+											</p>
+										</section>
+
+									</div>
+
+									<div class="col-3 col-6-medium col-12-small">
+
+										<!-- Feature -->
+										<section class="box feature">
+											<a class="image featured"><img src="images/cat_help.PNG" alt="" /></a>
+											<h3><a>Help Command</a></h3>
+											<p>
+												This photo shows the view of the cat metronome-help. Echos are prevented on this file.
 											</p>
 										</section>
 

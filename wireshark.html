@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Kate Dean-Jenkins QNX Embedded Secure State Controller</title>
+	<title>Kate Dean-Jenkins Wireshark Log Dissector in TShark</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,7 @@
 			<div class="logo container">
 				<div>
 					<h1><a href="index.html" id="logo">Kate Dean-Jenkins</a></h1>
-					<p>QNX Embedded Secure State Controller</p>
+					<p>Automated Network Telemetry & Packet Analysis Tool</p>
 				</div>
 			</div>
 		</header>
@@ -58,39 +58,39 @@
 							<article class="box page-content">
 
 								<header>
-									<h2>QNX Embedded Systems Server / Client</h2>
+									<h2>Wireshark Log Dissector in TSHARK</h2>
 								</header>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Real-Time Embedded Systems Engineering:</h3>
+									<h3>Automated Network Traffic Analysis:</h3>
 									<p>
-										Architected a distributed access control system within the Blackberry QNX
-										environment using C, leveraging the QNX Namespace to establish secure
-										client-server communication. I engineered a three-tiered architecture consisting
-										of an input client, a display server, and a central controller to manage
-										asynchronous hardware-status messaging.
+										Developed a custom diagnostic utility using TShark and Batch scripting to
+										automate the extraction and analysis of telemetry from Wireshark packet
+										captures. I engineered the script to parse large-scale datasets, isolating
+										mission-critical conversation statistics and flow dynamics to identify network
+										behavior patterns.
 									</p>
 								</section>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Finite State Machine (FSM) Logic:</h3>
+									<h3>Packet Filtering & Data Synthesis:</h3>
 									<p>
-										Implemented a robust Deterministic Finite Automaton (DFA) to govern the
-										operational lifecycle of a secure entry system (Lock/Unlock/Open/Close). By
-										applying compiler theory and state-transition logic, I ensured the system
-										maintained high-integrity operational order, programmatically preventing invalid
-										sequences such as unauthorized opening of locked nodes.
+										Designed and implemented complex filtering logic to calculate frame
+										distributions across specific protocols and network layers. By leveraging the
+										TShark command-line interface, I automated the isolation of high-priority
+										traffic, enabling rapid identification of anomalies or bottlenecks within the
+										captured data.
 									</p>
 								</section>
 
 								<section style="margin-bottom: 30px;">
-									<h3>Distributed Inter-Process Communication (IPC):</h3>
+									<h3>Command-Line Interface (CLI) Architecture:</h3>
 									<p>
-										Designed a complex Client-Server-Client workflow to facilitate real-time
-										synchronization between user input and hardware-prompt displays. This
-										architecture utilized specialized QNX system calls for server creation and
-										naming, ensuring reliable and secure data flow across the embedded network
-										infrastructure.
+										Architected a terminal-based reporting system that synthesized raw packet data
+										into structured, human-readable tables. This custom-built interface streamlined
+										the review process for network administrators, transforming low-level
+										hexadecimal and binary streams into actionable flow statistics and performance
+										metrics.
 									</p>
 								</section>
 
@@ -109,10 +109,12 @@
 
 										<!-- Feature -->
 										<section class="box feature">
-											<a class="image featured"><img src="images/qnx.PNG" alt="" /></a>
-											<h3><a>Command-line Input Run</a></h3>
+											<a class="image featured"><img src="images/log-dissector.PNG" alt="" /></a>
+											<h3><a>Example of Finished Batch File</a></h3>
 											<p>
-												This photo shows an example of how the input/output would look.
+												This is how the batch file displays the amount of frames depending on
+												the filter in a table format and allows the user to enter another
+												wireshark capture to dissect.
 											</p>
 										</section>
 
